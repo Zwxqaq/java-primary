@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #blue {
+            height: 800px;
+            background: blue;
+        }
+        #pink {
+            height: 800px;
+            background: pink;
+        }
+        a:link {
+            color: #000;
+        }
+        a:visited {
+            color: pink;
+        }
+        a:hover {
+            color: #f00;
+        }
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    div
+    a
+    span
+    h1-h6
+    p
+    strong 强调粗体
+    em 强调斜体
+    ul 无序标签
+    ol 有序标签
+    li 列表项
+    dl 自定义列表
+    dt 自定义列表标题
+    dd 自定义列表项
+    mark 标记
+    img 图片
+
+    h5：
+    header 头部
+    nav 导航
+    section 版本
+    footer 尾部
+    aside 附属信息
+    time 时间
+    -->
+    <!--
+    前后端交互 >>> xml  早期
+              >>> json
+    -->
+
+    <!--
+    base: 设置页面所有链接的打开方式以及链接地址
+    -->
+    <!--
+    a:
+    特点：
+    1.默认有下划线
+    2.不会继承父级颜色样式
+    功能:
+    1.跳转页面 href  target >>> _blank在新页面打开 _self 在本页面打开
+    2.锚点
+        在href里面写上#name name对应id的值
+    3.下载
+        在href里面写上文件地址
+        浏览器如果能读出此文件，就直接被读取，不会被下载
+
+        采用download
+    -->
+
+    <!--
+    a标签颜色：
+        伪类：针对元素某种状态添加不同样式
+        :link 未被访问状态
+        :visit 访问状态
+        :hover 鼠标悬停状态
+        :active 鼠标按下不动时的状态，激活状态
+    -->
+    <a href="../css出现/css出现内部.html" target="_self">new page or not</a>
+    <a href="#blue">蓝色</a>
+    <a href="#pink">粉色</a>
+    <div id="blue">蓝色</div>
+    <div id="pink">粉色</div>
+    <a href="../download/img.zip" download="">下载</a>
+</body>
+</html>

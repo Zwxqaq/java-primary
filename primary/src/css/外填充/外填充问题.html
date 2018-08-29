@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1 {
+            background: red;
+            /*border: 3px black solid;*/
+        }
+        #div2 {
+            height: 50px;
+            background: green;
+            color: #ffffff;
+            margin: 100px;
+        }
+        #div3 {
+            height: 50px;
+            background: blue;
+            color: #ffffff;
+            margin: 100px;
+        }
+        #div4 {
+            height: 100px;
+            background: yellow;
+        }
+        #div5 {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    margin问题
+    1.传递问题
+    只有上下传递，左右不传递
+    子级会把自己的margin-top/bottom传递给父级
+    解决办法：给父级加上边框
+    2.上下叠压问题
+    只有上下会叠压，左右不会叠压,会取得大的值进行叠压
+    解决方法：
+    给一个元素设置margin即可
+    3.auto
+    margin-left:auto
+    margin-right:auto
+
+    -->
+    <div id="div1">
+        <div id="div2">div2</div>
+        <div id="div3">div3</div>
+        <div id="div4">div4</div>
+    </div>
+    <div id="div5">div5</div>
+</body>
+</html>
